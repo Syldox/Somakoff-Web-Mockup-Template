@@ -1,0 +1,106 @@
+.logo{
+
+
+  /*  padding: 5px;*/
+  /*border-radius: 50%;*/
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition:         transform .8s ease-in-out;
+}
+
+.logo:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+.logi-home:hover {
+  color: #ff6601;
+  text-shadow: 0 0 100px ,
+  0 0 100px #666,
+  0 0 100px #666,
+  0 0 100px #666,
+  0 0 100px #666,
+  0 0 50px #000,
+  0 0 50px #000,
+  0 0 50px #000,
+  0 0 50px #000,
+  0 0 50px #000;
+  /*transition*/
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 2.5s ease-in-out infinite alternate;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+
+}
+
+.btn-orange{
+  background-color: #ff6601;
+  color: #ff6601;
+
+}
+
+.btn-create-post{
+  float: left;
+
+}
+
+.btn-border{
+  border-color: #f5861a;
+}
+
+
+/*icon rotate navbar logo */
+
+.logo{
+  /*  padding: 5px;*/
+  /*border-radius: 50%;*/
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition:         transform .8s ease-in-out;
+}
+
+.logo:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+.logi-home:hover {
+  color: #fff;
+  text-shadow: 0 0 100px ,
+  0 0 100px #666,
+  0 0 100px #666,
+  0 0 100px #666,
+  0 0 100px #666,
+  0 0 50px #000,
+  0 0 50px #000,
+  0 0 50px #000,
+  0 0 50px #000,
+  0 0 50px #000;
+  /*transition*/
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 2.5s ease-in-out infinite alternate;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+
+}
+.navborder {
+  border-bottom-color: #ff9700 !important;
+  border-style: solid;
+}
+
+/* scroll to top */
+
+/* #toTop{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  background-color: #ff6700;
+  border-color: #ff6700;
+} */
+
