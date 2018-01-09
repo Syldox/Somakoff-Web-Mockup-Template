@@ -1,3 +1,5 @@
+// scroll to top 
+
 $(document).ready(function(){
   $('body').append('<div id="toTop" class="btn btn-info"><span class="fa fa-arrow-circle-up"></span> Top</div>');
   $(window).scroll(function () {
