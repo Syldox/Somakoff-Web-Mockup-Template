@@ -15,6 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="../../../../dist/css/carousel.css" rel="stylesheet">
+    <script src="../../../../dist/js/scrollreveal.min.js"></script>
   </head>
   <body>
 
@@ -162,19 +163,19 @@
           </div>
           <div class="col-md-5">
             <!-- <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
-            <img src="images/nescafe.png" class="featurette-image img-fluid mx-auto" alt="" data-src="holder.js/500x500/auto">
+            <img src="images/nescafe.png" class="featurette-image img-fluid mx-auto info-right" alt="" data-src="holder.js/500x500/auto">
           </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div class="row featurette" id="info1">
+        <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading">Lipton Ice Tea. <span class="text-muted"> Lipton Ice Tea Green.</span></h2>
             <p class="lead">Laissez-vous totalement surprendre par les deux nouvelles saveurs de Lipton Ice Tea Green : Litchi-Jasmin et Citron vert-Menthe. ... Osez le goût exotique du Litchi-Jasmin et la fraîcheur ultime du Citron vert-Menthe ! ... LET’S GO AVEC LIPTON ICE TEA..</p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img src="images/lipton.jpg" class="featurette-image img-fluid mx-auto" alt="" data-src="holder.js/500x500/auto">
+            <img src="images/lipton.jpg" class="featurette-image img-fluid mx-auto showcase-left" alt="" data-src="holder.js/500x500/auto">
           </div>
         </div>
 
@@ -186,7 +187,7 @@
             <p class="lead">Sans gluten (une protéine végétale présente dans le blé, le seigle, l'orge ou l'avoine et à laquelle les nourrissons développent parfois une intolérance). - Contient du Bifidus Lactis. Présentation : Boîte de 300g. Lire la suite Réduire le texte. Récoltés via Ekomi Avis. (17). 4,7 sur 5 étoiles..</p>
           </div>
           <div class="col-md-5">
-            <img src="images/cerelac.png" class="featurette-image img-fluid mx-auto" alt="" data-src="holder.js/500x500/auto">
+            <img src="images/cerelac.png" class="featurette-image img-fluid mx-auto info-left" alt="" data-src="holder.js/500x500/auto">
           </div>
         </div>
 
@@ -199,84 +200,22 @@
 
       <!-- FOOTER -->
       <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <!-- <p class="float-right"><a href="#">Back to top</a></p> -->
+        <p>&copy; 2017 Somakoff, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
     </main>
-
-    <style>
-      #toTop{
-          position: fixed;
-          bottom: 10px;
-          right: 10px;
-          cursor: pointer;
-          display: none;
-          background-color: #ff6700;
-          border-color: #ff6700;
-      }
-  </style>
-  
-  <script>
-      $(document).ready(function(){
-          $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> Top</div>');
-          $(window).scroll(function () {
-              if ($(this).scrollTop() != 0) {
-                  $('#toTop').fadeIn();
-              } else {
-                  $('#toTop').fadeOut();
-              }
-          });
-          $('#toTop').click(function(){
-              $("html, body").animate({ scrollTop: 0 }, 600);
-              return false;
-          });
-      });
-  
-  </script>
-    
-
-
-    <!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <!-- <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script> -->
-    <script src="../../../dist/js/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="../../../dist/js/jquery.min.js"></script>
     <script src="../../../dist/js/popper.min.js"></script>
     <script src="../../../../dist/js/bootstrap.min.js"></script>
-    <script src="../../../../dist/js/script.js"></script>
+    <script src="../../../../dist/js/scripts.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="../../../../dist/js/holder.min.js"></script>
   </body>
 </html>
-
-<style>
-    #toTop{
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        cursor: pointer;
-        display: none;
-        background-color: #ff6700;
-        border-color: #ff6700;
-    }
-</style>
-
-<script>
-    $(document).ready(function(){
-        $('body').append('<div id="toTop" class="btn btn-info"><span class="glyphicon glyphicon-chevron-up"></span> Top</div>');
-        $(window).scroll(function () {
-            if ($(this).scrollTop() != 0) {
-                $('#toTop').fadeIn();
-            } else {
-                $('#toTop').fadeOut();
-            }
-        });
-        $('#toTop').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 600);
-            return false;
-        });
-    });
-
-</script>
