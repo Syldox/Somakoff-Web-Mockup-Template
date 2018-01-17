@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../images/somakoff.png">
+  <link href="../../../../dist/css/font-awesome.min.css" rel="stylesheet">
+  <title>SOMAKOFF</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../../dist/css/style.css">
+
+  <!-- Custom styles for this template -->
+  <link href="../../../../dist/css/carousel.css" rel="stylesheet">
+  <script src="../../../../dist/js/scrollreveal.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark nav-height navborder" style="color:#1b1e21" id="navback-color">
+      <a class="navbar-brand logi-home" href="./">
+        <i aria-hidden="true" href="#page-top" style="margin-bottom: -20px; color:hsl(32, 100%, 51%)">
+          <img alt="Brand" src="./images/somakoff.png" style="width: 40px; border-radius: 5px;margin-left: 2px; " class="logo"> SOMAKOFF</i>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i> Produits
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">
+                    <img class="rounded-circle" src="images/maggi1.png" alt="Generic placeholder image" width="20" height="20">Maggi</a>
+                  <a class="dropdown-item" href="#">
+                    <img class="rounded-circle" src="images/nidoo.png" alt="Generic placeholder image" width="20" height="20"> Nido</a>
+                  <a class="dropdown-item" href="#">
+                    <img class="rounded-circle" src="images/calve.png" alt="Generic placeholder image" width="20" height="20"> Calvé</a>
+                  <a class="dropdown-item" href="#">
+                    <img class="rounded-circle" src="images/nescafe.png" alt="Generic placeholder image" width="20" height="20"> Nescafé</a>
+                  <a class="dropdown-item" href="#">
+                    <img class="rounded-circle" src="images/lipton.jpg" alt="Generic placeholder image" width="20" height="20"> Lipton</a>
+                  <a class="dropdown-item" href="#">
+                    <img class="rounded-circle" src="images/cerelac.png" alt="Generic placeholder image" width="20" height="20"> Cerelac</a>
+                  <a class="dropdown-item" href="#">
+                    <img class="rounded-circle" src="images/the.jpg" alt="Generic placeholder image" width="20" height="20"> Thé</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa fa-share" aria-hidden="true"></i> Tous Nos Produits </a>
+                </div>
+              </li>
+            </li>
+          </li>
+
+          <form class="form-inline mt-2 mt-md-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="search">
+              <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item active">
+              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="info.html">
+              <i class="fa fa-info" aria-hidden="true"></i> Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="location.html">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+<div class="container navbar" style="margin-left: 60px;">
+  <h1>Contactez Somakoff </h1>
+  <hr>
+
+  <div class="container">
+      <img src="images/somakoff.png" alt="" style="width: 200px; margin-bottom: 5px;" class="info-left">
+  </div>
+
+  <div class="container col-md-12"  >
+      <div class="row">
+          <div class="col-md-8">
+              <div class="well well-sm">
+                  <form action="{{url('contact')}}" method="POST">
+                      <!-- {{csrf_field()}} -->
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="email">
+                                      Email Address</label>
+                                  <div class="input-group">
+               <span class="input-group-addon"><span class="fa fa-envelope-o" aria-hidden="true"></span>
+               </span>
+                                      <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" name="email"/></div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="subject">
+                                      Subject</label>
+                                  <select id="subject" name="subject" class="form-control" required="required">
+                                      <option value="na" selected="">Choose One:</option>
+                                      <option value="service">General Customer Service</option>
+                                      <option value="suggestions">Suggestions</option>
+                                      <option value="product">Product Support</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="name">
+                                      Message</label>
+                                  <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                            placeholder="Message"></textarea>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <button type="submit" class="btn btn-success btn-lg btn-block pull-right " id="btnContactUs" style="background-color: #e67f3b">
+                                  Send Message</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+
+
+          <div class="col-md-4" style="margin-top: -210px">
+              <form>
+                  <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+                  <address>
+                      <strong>Twitter, https://twitter.com/Somakoff</strong><br>
+                      Somakoff Mali S.A<br>
+                      Bamako, Mali<abbr title="Phone">
+                          P:</abbr>
+                      +223 44 99 99 03
+                  </address>
+                  <address>
+                      <a href="mailto:#">Somakoff@gmail.com</a>
+                  </address>
+              </form>
+
+              <!-- {{--Google Maps --}} -->
+
+              <h1>Somakoff Map </h1>
+
+              <div id="map" style="width: 500px;height: 288px ; margin-top: 22px" ></div>
+
+              <script>
+                  function initMap() {
+
+//            Map Options
+
+                      var options ={
+
+                          zoom:8,
+                          center:{lat:12.6500000,lng:-8.0000000},
+                          styles: [
+                              {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+                              {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+                              {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+                              {
+                                  featureType: 'administrative.locality',
+                                  elementType: 'labels.text.fill',
+                                  stylers: [{color: '#d59563'}]
+                              },
+                              {
+                                  featureType: 'poi',
+                                  elementType: 'labels.text.fill',
+                                  stylers: [{color: '#d59563'}]
+                              },
+                              {
+                                  featureType: 'poi.park',
+                                  elementType: 'geometry',
+                                  stylers: [{color: '#263c3f'}]
+                              },
+                              {
+                                  featureType: 'poi.park',
+                                  elementType: 'labels.text.fill',
+                                  stylers: [{color: '#6b9a76'}]
+                              },
+                              {
+                                  featureType: 'road',
+                                  elementType: 'geometry',
+                                  stylers: [{color: '#38414e'}]
+                              },
+                              {
+                                  featureType: 'road',
+                                  elementType: 'geometry.stroke',
+                                  stylers: [{color: '#212a37'}]
+                              },
+                              {
+                                  featureType: 'road',
+                                  elementType: 'labels.text.fill',
+                                  stylers: [{color: '#9ca5b3'}]
+                              },
+                              {
+                                  featureType: 'road.highway',
+                                  elementType: 'geometry',
+                                  stylers: [{color: '#746855'}]
+                              },
+                              {
+                                  featureType: 'road.highway',
+                                  elementType: 'geometry.stroke',
+                                  stylers: [{color: '#1f2835'}]
+                              },
+                              {
+                                  featureType: 'road.highway',
+                                  elementType: 'labels.text.fill',
+                                  stylers: [{color: '#f3d19c'}]
+                              },
+                              {
+                                  featureType: 'transit',
+                                  elementType: 'geometry',
+                                  stylers: [{color: '#2f3948'}]
+                              },
+                              {
+                                  featureType: 'transit.station',
+                                  elementType: 'labels.text.fill',
+                                  stylers: [{color: '#d59563'}]
+                              },
+                              {
+                                  featureType: 'water',
+                                  elementType: 'geometry',
+                                  stylers: [{color: '#17263c'}]
+                              },
+                              {
+                                  featureType: 'water',
+                                  elementType: 'labels.text.fill',
+                                  stylers: [{color: '#515c6d'}]
+                              },
+                              {
+                                  featureType: 'water',
+                                  elementType: 'labels.text.stroke',
+                                  stylers: [{color: '#17263c'}]
+                              }
+                          ]
+                      };
+
+//            New Map
+                      var map = new
+                      google.maps.Map(document.getElementById('map'),options);
+
+                      //listen map on click
+
+                      google.maps.event.addListener(map, 'click', function(event){
+
+//                add marker
+                          addMarker({coords:event.latLng});
+
+
+                      });
+//
+                      //Array of Markers
+
+                      var markers =[
+
+
+                          {
+                              coords:{lat:12.630435 , lng: -8.028238},
+                              iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                              content:'<h1>Orange Mali</h1>'
+                          },
+
+
+                          {
+                              coords:{lat:12.633866 , lng:-8.024445},
+                              content:'<h1>Orange Mall</h1>'
+//                iconImage:'http://www.clker.com/cliparts/I/l/L/S/W/9/map-marker-hi.png'
+                          }
+
+                      ];
+
+
+                      //loop through markers
+
+                      for (var i = 0; i < markers.length; i++){
+
+                          //            add marker location to the map
+                          addMarker(markers[i]);
+
+
+                      }
+
+
+                      //add marker function
+
+
+                      function addMarker(props){
+                          var marker = new google.maps.Marker({
+                              position:props.coords,
+                              map:map
+//                icon:props.iconImage
+//                icon:'http://www.clker.com/cliparts/I/l/L/S/W/9/map-marker-hi.png'
+//
+                          });
+
+//                check for custom icon
+                          if(props.iconImage){
+
+//                    set icon image
+
+                              marker.setIcon(props.iconImage);
+
+                          }
+
+
+                          //check content
+
+                          if(props.content){
+
+
+                              var infoWindow = new google.maps.InfoWindow({
+                                  content:props.content
+
+                              });
+
+                              marker.addListener('click',function(){
+
+                                  infoWindow.open(map,marker);
+                              });
+
+                          }
+
+                      }
+
+
+
+                  }
+              </script>
+
+
+
+              <script async defer
+                      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGkrBAgjF9LYMsVpgWyVZ_PhHWULDdpng&callback=initMap">
+              </script>
+
+
+
+  <script src="../../../dist/js/jquery.min.js"></script>
+  <script src="../../../dist/js/popper.min.js"></script>
+  <script src="../../../../dist/js/bootstrap.min.js"></script>
+  <script src="../../../../dist/js/scripts.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="../../../../dist/js/holder.min.js"></script>
+</body>
+
+</html>

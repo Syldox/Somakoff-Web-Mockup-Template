@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="../../../../images/Nestlé_Chocolove.png">
+  <link rel="icon" href="../../../../images/somakoff.png">
   <link href="../../../../dist/css/font-awesome.min.css" rel="stylesheet">
   <title>SOMAKOFF</title>
 
@@ -22,10 +22,10 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark nav-height navborder" style="color: #ffc107;">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark nav-height navborder" style="color:#1b1e21" id="navback-color">
       <a class="navbar-brand logi-home" href="./">
-        <i aria-hidden="true" href="#page-top" style="margin-bottom: -20px; color:#ffc107">
-          <img alt="Brand" src="./images/nest.png" style="width: 30px; border-radius: 10px;margin-left: 2px; " class="logo"> SOMAKOFF</i>
+        <i aria-hidden="true" href="#page-top" style="margin-bottom: -20px; color:hsl(32, 100%, 51%)">
+          <img alt="Brand" src="./images/somakoff.png" style="width: 40px; border-radius: 5px;margin-left: 2px; " class="logo"> SOMAKOFF</i>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -62,26 +62,26 @@
               </li>
             </li>
           </li>
-        </ul>
-        <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" style="width: 710px;">
-          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
-        </form>
 
+          <form class="form-inline mt-2 mt-md-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="search">
+              <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </ul>
         <ul class="navbar-nav ml-auto">
           <!-- <li class="nav-item active">
               <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
             </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="info.html">
               <i class="fa fa-info" aria-hidden="true"></i> Information</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="location.html">
               <i class="fa fa-map-marker" aria-hidden="true"></i> Location</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="contact.html">
               <i class="fa fa-phone" aria-hidden="true"></i> Contact</a>
           </li>
         </ul>
@@ -153,7 +153,7 @@
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <h1 class="text-center">« Good Food, Good Life »</h1>
+      <h1 class="text-center">« SOMAKOFF »</h1>
       <div class="row">
         <div class="col-lg-4">
           <img class="rounded-circle" src="images/maggi1.png" alt="Generic placeholder image" width="140" height="140">
@@ -327,7 +327,7 @@
             Réduire le texte. Récoltés via Ekomi Avis. (17). 4,7 sur 5 étoiles..</p>
         </div>
         <div class="col-md-5">
-          <img src="images/cerelac.png" class="featurette-image img-fluid mx-auto info-left" alt="" data-src="holder.js/500x500/auto">
+          <img src="images/cerelac.jpg" class="featurette-image img-fluid mx-auto info-left" alt="" data-src="holder.js/500x500/auto">
         </div>
       </div>
 
@@ -340,13 +340,56 @@
 
 
     <!-- FOOTER -->
-    <footer class="container">
-      <!-- <p class="float-right"><a href="#">Back to top</a></p> -->
-      <p>&copy; 2017 Somakoff, Inc. &middot;
-        <a href="#">Privacy</a> &middot;
-        <a href="#">Terms</a>
-      </p>
-    </footer>
+    <section class="footer" style="margin-top: 100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4  col-md-4 col-sm-4">
+                    <div class="footer_dv">
+                        <h4>Aide Et Support</h4>
+                        <ul>
+    
+                            <li><a class="footer_text" href="#">Offres mobile</a>  ......      <a class="footer_text" href="#">Offres fixe</a></li>
+                            <li><a class="footer_text" href="#">Services mobile</a>  ......      <a class="footer_text" href="#">La 4G</a></li>
+                            <li><a class="footer_text" href="#">Téléphones mobile</a>  ......      <a class="footer_text" href="#">C'est quoi?</a></li>
+                            <li><a class="footer_text" href="#">Internet à domicile</a>  ......      <a class="footer_text" href="#">Comment en profiter?</a></li>
+                            <li><a class="footer_text" href="#">Internet mobile</a>  ......      <a class="footer_text" href="#">Forfaits appels Orange</a></li>
+                            <li><a class="footer_text" href="#">Promotion Séwa</a>  ......      <a class="footer_text" href="#">Service</a></li>
+    
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-4 col-sm-4">
+                    <div class="footer_dv">
+                        <h4>Localiser Une Boutique</h4>
+                        <ul>
+                            <a href="./about"><img src="images/help/Orange_marker.png" alt="hotline" height="100px" style="margin-left: 80px"></a>
+                            <p class="footer_text">Pour Nous Localiser Acceder au Map ........</p>
+    
+                        </ul>
+                    </div>
+                </div>
+    
+    
+                <div class="col-lg-4  col-md-4 col-sm-4">
+                    <div class="footer_dv">
+                        <h4>Contactez Nous</h4>
+                        <a href="./contact"><img src="images/help/Corp-Help.png" alt="hotline" height="100px" style="margin-left: 40px"></a>
+                        <p class="footer_text">Aide Et Support Disponible  24/24 Hotline ........</p>
+                        <p>Orange Mali Aci 2000 ........</p>
+                        <p>Bamako, Mali P: +223 44 99 99 03</p>
+    
+    
+                        </div>
+                </div>
+    
+    
+    
+               
+            </div>
+        </div>
+    
+    
+    </section>
   </main>
   <!-- Bootstrap core JavaScript
     ================================================== -->
